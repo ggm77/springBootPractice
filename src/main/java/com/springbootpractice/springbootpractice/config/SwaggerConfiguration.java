@@ -1,6 +1,9 @@
 package com.springbootpractice.springbootpractice.config;
 
 
+import com.springbootpractice.springbootpractice.data.dao.ProductDAO;
+import com.springbootpractice.springbootpractice.data.dao.impl.ProductDAOImpl;
+import com.springbootpractice.springbootpractice.data.repository.ProductRepository;
 import io.swagger.v3.oas.annotations.OpenAPIDefinition;
 import io.swagger.v3.oas.annotations.info.Info;
 import lombok.RequiredArgsConstructor;
@@ -28,4 +31,6 @@ public class SwaggerConfiguration {
                 .pathsToMatch(paths)
                 .build();
     }
+
+
 }
